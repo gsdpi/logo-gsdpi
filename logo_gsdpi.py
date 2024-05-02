@@ -62,7 +62,7 @@ ax.axis('scaled')
 
 plt.axis('off')
 
-plt.savefig('logo_para_fondo_blanco.png',transparent=True)
+plt.savefig('logo_para_fondo_blanco.png', transparent=True, dpi=300)
 
 
 
@@ -94,7 +94,7 @@ ax.axis('scaled')
 
 plt.axis('off')
 
-plt.savefig('logo_solo_acronimo.png',transparent=True)
+plt.savefig('logo_solo_acronimo.png', transparent=True, dpi=300)
 
 
 
@@ -132,4 +132,4 @@ ax.axis('scaled')
 
 plt.axis('off')
 
-plt.savefig('logo_para_fondo_negro.png',transparent=True)
+plt.savefig('logo_para_fondo_negro.png', transparent=True, dpi=300)
