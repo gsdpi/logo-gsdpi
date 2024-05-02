@@ -55,8 +55,8 @@ texto = '''grupo de supervisión, diagnóstico
 y descubrimiento del conocimiento
 en procesos de ingeniería'''
 
-ax.text(12,+4.5,'GSDPI',verticalalignment='center', fontsize=40,color='black', fontproperties=font_prop, alpha=1)
-ax.text(12,-4.5,texto,  verticalalignment='center', fontsize=20,color='black', fontproperties=font_prop, alpha=1)
+ax.text(12,+4.5,'GSDPI',verticalalignment='center', fontsize=40,color='#888888', fontproperties=font_prop, alpha=1)
+ax.text(12,-4.5,texto,  verticalalignment='center', fontsize=20,color='#888888', fontproperties=font_prop, alpha=1)
 ax.axis('scaled')
 
 plt.axis('off')
