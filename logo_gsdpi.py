@@ -34,7 +34,6 @@ plt.close('all')
 plt.ion()
 
 
-
 '''
 EJEMPLO 1
 Figura para fondo blanco con el texto del nombre del grupo
@@ -63,41 +62,6 @@ ax.axis('scaled')
 plt.axis('off')
 
 plt.savefig('logo_para_fondo_blanco.png', transparent=True, dpi=300)
-
-
-
-
-'''
-EJEMPLO 3
-Figura para fondo negro con el acrónimo del grupo en el centro
-'''
-
-
-fig, ax = plt.subplots(1)
-fig.set_size_inches(9,3)
-
-# logo con 100 semillas y c=1
-draw_phyllotaxis(ax,100,1)
-
-# Agregar texto con la fuente específica
-from matplotlib.font_manager import FontProperties
-
-font_path = "Yanone_Kaffeesatz/static/YanoneKaffeesatz-Bold.ttf"
-font_prop = FontProperties(fname=font_path,weight=100)
-
-texto = '''grupo de supervisión, diagnóstico
-y descubrimiento del conocimiento
-en procesos de ingeniería'''
-
-ax.text(0,0,'GSDPI',verticalalignment='center',horizontalalignment='center', fontsize=50,color='#888888', fontproperties=font_prop, alpha=1)
-ax.axis('scaled')
-
-plt.axis('off')
-
-plt.savefig('logo_solo_acronimo.png', transparent=True, dpi=300)
-
-
-
 
 
 
@@ -133,3 +97,40 @@ ax.axis('scaled')
 plt.axis('off')
 
 plt.savefig('logo_para_fondo_negro.png', transparent=True, dpi=300)
+
+
+
+
+
+
+
+'''
+EJEMPLO 3
+Figura para fondo negro con el acrónimo del grupo en el centro
+'''
+
+
+fig, ax = plt.subplots(1)
+fig.set_size_inches(9,3)
+
+# logo con 100 semillas y c=1
+draw_phyllotaxis(ax,100,1)
+
+# Agregar texto con la fuente específica
+from matplotlib.font_manager import FontProperties
+
+font_path = "Yanone_Kaffeesatz/static/YanoneKaffeesatz-Bold.ttf"
+font_prop = FontProperties(fname=font_path,weight=100)
+
+texto = '''grupo de supervisión, diagnóstico
+y descubrimiento del conocimiento
+en procesos de ingeniería'''
+
+ax.text(0,0,'GSDPI',verticalalignment='center',horizontalalignment='center', fontsize=50,color='#888888', fontproperties=font_prop, alpha=1)
+ax.axis('scaled')
+
+plt.axis('off')
+
+plt.savefig('logo_solo_acronimo.png', transparent=True, dpi=300)
+
+
